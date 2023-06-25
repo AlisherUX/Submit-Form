@@ -10,14 +10,13 @@ body{
     align-items: center;
     justify-content: center;
     width: 99.5%;
-    height: 95.8vh;
 }
 
 .container{
+    margin-top: 12%;
     background-color: #B83B5E;
     max-width: 800px;
     width: 100%;
-    height: 500px;
     border-radius: 30px;
     padding: 20px;
     display: flex;
