@@ -18,7 +18,10 @@
       <p class="title">Type some text in input and press enter</p>
       <form onsubmit="return false" action="" class="form">
         <input type="text" class="input" />
-        <button class="button" onclick="work()" type="submit">CLICK ME</button>
+        <div class="buttons-wrapper">
+          <button class="button" onclick="work()" type="submit">To upper or to lower</button>
+          <button class="sound-btn"><img src="./Images/sound.png" alt=""> <div class="sound-btn-item"></div></button>
+        </div>
       </form>
       <div class="answer-box">
         <p id="catcher"></p>
