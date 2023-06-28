@@ -10,6 +10,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 99.5%;
+    overflow: hidden;
 }
 
 .container{
@@ -71,6 +72,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.button.active{
+    animation: color-change 0.1s ease-in; 
+}
+
 .answer-box{
     max-width: 55%;
     overflow-wrap: break-word;
@@ -121,4 +126,269 @@ body{
     width: 55%;
     justify-content: space-between;
     display: flex;
+}
+
+.pressed-buttons{
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ctrl,
+.alt,
+.caps,
+.shift,
+.tab,
+.probel,
+.loss,
+.windows,
+.up,
+.down,
+.left,
+.right,
+.enter,
+.esc,
+.plus,
+.minus,
+.equal,
+.bot-line,
+.text-items,
+.big-zero,
+.del,
+.one,
+.zero,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.multiple,
+.divide,
+.nl,
+.sl,
+.ps,
+.straight-line,
+.question,
+.quote,
+.stop-mark,
+.dot,
+.comma,
+.square-bracket-stop,
+.square-bracket-finish,
+.f1,
+.f2,
+.f3,
+.f4,
+.f5,
+.f6,
+.f7,
+.f8,
+.f9,
+.f10,
+.f11,
+.f12,
+.a,
+.b,
+.c,
+.d,
+.e,
+.f,
+.g,
+.h,
+.i,
+.j,
+.k,
+.l,
+.m,
+.n,
+.o,
+.p,
+.q,
+.r,
+.s,
+.t,
+.u,
+.v,
+.w,
+.x,
+.y,
+.z{
+    width: 60px;
+    height: 40px;
+    background-color: #2e2e2e;
+    color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+.caps{
+    width: 75px;
+}
+
+.plus{
+    width: 40px;
+    padding-block: 40px;
+}
+
+.loss,
+.big-zero{
+    width: 80px;
+}
+
+.loss-img{
+    width: 38px;
+    height: 25px;
+}
+
+.windows-img{
+    width: 20px;
+    height: 20px;
+}
+
+.shift{
+    width: 85px;
+}
+
+.tab{
+    width: 70px;
+}
+
+.probel{
+    width: 110px;
+}
+
+.enter{
+    width: 70px;
+    height: 100%;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.up,
+.down,
+.left,
+.right,
+.esc,
+.minus,
+.equal,
+.bot-line,
+.text-items,
+.del,
+.one,
+.zero,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.multiple,
+.divide,
+.nl,
+.sl,
+.ps,
+.straight-line,
+.question,
+.quote,
+.stop-mark,
+.comma,
+.dot,
+.square-bracket-finish,
+.square-bracket-stop,
+.f1,
+.f2,
+.f3,
+.f4,
+.f5,
+.f6,
+.f7,
+.f8,
+.f9,
+.f10,
+.f11,
+.f12,
+.a,
+.b,
+.c,
+.d,
+.e,
+.f,
+.g,
+.h,
+.i,
+.j,
+.k,
+.l,
+.m,
+.n,
+.o,
+.p,
+.q,
+.r,
+.s,
+.t,
+.u,
+.v,
+.w,
+.x,
+.y,
+.z{
+    width: 40px;
+}
+
+.up >img,
+.down >img,
+.left >img,
+.right >img,
+.enter >img,
+.plus >img,
+.minus >img,
+.equal >img{
+    width: 15px;
+}
+
+.down >img{
+    transform: rotate(180deg);
+}
+
+.left >img{
+    transform: rotate(-90deg);
+}
+
+.right >img{
+    transform: rotate(90deg);
+}
+
+.text-items,
+.big-zero{
+    flex-direction: column;
+    gap: 2px;
+}
+
+.big-zero{
+    gap: 0px;
+}
+
+@keyframes color-change{
+    0%{
+        background-color: #F08A5D;
+    }
+    100%{
+        background-color: #ffdaca;
+    }
 }

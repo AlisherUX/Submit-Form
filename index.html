@@ -16,43 +16,141 @@
   <body>
     <div class="container">
       <p class="title">Type some text in input and press enter</p>
+
       <form onsubmit="return false" action="" class="form">
         <input type="text" class="input" />
         <div class="buttons-wrapper">
-          <button class="button" onclick="work()" type="submit">To upper or to lower</button>
-          <button class="sound-btn"><img src="./Images/sound.png" alt=""> <div class="sound-btn-item"></div></button>
+          <button class="button" onclick="work()" type="submit">
+            To upper or to lower
+          </button>
+          <button class="sound-btn">
+            <img src="./Images/sound.png" alt="" />
+            <div class="sound-btn-item"></div>
+          </button>
         </div>
       </form>
+
       <div class="answer-box">
         <p id="catcher"></p>
       </div>
-      <audio id="a" src="./letters-audios/A.mp3"></audio>
-      <audio id="b" src="./letters-audios/B.mp3"></audio>
-      <audio id="c" src="./letters-audios/C.mp3"></audio>
-      <audio id="d" src="./letters-audios/D.mp3"></audio>
-      <audio id="e" src="./letters-audios/E.mp3"></audio>
-      <audio id="f" src="./letters-audios/F.mp3"></audio>
-      <audio id="g" src="./letters-audios/G.mp3"></audio>
-      <audio id="h" src="./letters-audios/H.mp3"></audio>
-      <audio id="i" src="./letters-audios/I.mp3"></audio>
-      <audio id="j" src="./letters-audios/J.mp3"></audio>
-      <audio id="k" src="./letters-audios/K.mp3"></audio>
-      <audio id="l" src="./letters-audios/L.mp3"></audio>
-      <audio id="m" src="./letters-audios/M.mp3"></audio>
-      <audio id="n" src="./letters-audios/N.mp3"></audio>
-      <audio id="o" src="./letters-audios/O.mp3"></audio>
-      <audio id="p" src="./letters-audios/P.mp3"></audio>
-      <audio id="q" src="./letters-audios/Q.mp3"></audio>
-      <audio id="r" src="./letters-audios/R.mp3"></audio>
-      <audio id="s" src="./letters-audios/S.mp3"></audio>
-      <audio id="t" src="./letters-audios/T.mp3"></audio>
-      <audio id="u" src="./letters-audios/U.mp3"></audio>
-      <audio id="v" src="./letters-audios/V.mp3"></audio>
-      <audio id="w" src="./letters-audios/W.mp3"></audio>
-      <audio id="x" src="./letters-audios/X.mp3"></audio>
-      <audio id="y" src="./letters-audios/Y.mp3"></audio>
-      <audio id="z" src="./letters-audios/Z.mp3"></audio>
+
+      <div class="letters-audios">
+        <audio id="a" src="./letters-audios/A.mp3"></audio>
+        <audio id="b" src="./letters-audios/B.mp3"></audio>
+        <audio id="c" src="./letters-audios/C.mp3"></audio>
+        <audio id="d" src="./letters-audios/D.mp3"></audio>
+        <audio id="e" src="./letters-audios/E.mp3"></audio>
+        <audio id="f" src="./letters-audios/F.mp3"></audio>
+        <audio id="g" src="./letters-audios/G.mp3"></audio>
+        <audio id="h" src="./letters-audios/H.mp3"></audio>
+        <audio id="i" src="./letters-audios/I.mp3"></audio>
+        <audio id="j" src="./letters-audios/J.mp3"></audio>
+        <audio id="k" src="./letters-audios/K.mp3"></audio>
+        <audio id="l" src="./letters-audios/L.mp3"></audio>
+        <audio id="m" src="./letters-audios/M.mp3"></audio>
+        <audio id="n" src="./letters-audios/N.mp3"></audio>
+        <audio id="o" src="./letters-audios/O.mp3"></audio>
+        <audio id="p" src="./letters-audios/P.mp3"></audio>
+        <audio id="q" src="./letters-audios/Q.mp3"></audio>
+        <audio id="r" src="./letters-audios/R.mp3"></audio>
+        <audio id="s" src="./letters-audios/S.mp3"></audio>
+        <audio id="t" src="./letters-audios/T.mp3"></audio>
+        <audio id="u" src="./letters-audios/U.mp3"></audio>
+        <audio id="v" src="./letters-audios/V.mp3"></audio>
+        <audio id="w" src="./letters-audios/W.mp3"></audio>
+        <audio id="x" src="./letters-audios/X.mp3"></audio>
+        <audio id="y" src="./letters-audios/Y.mp3"></audio>
+        <audio id="z" src="./letters-audios/Z.mp3"></audio>
+      </div>
     </div>
+
+    <div class="pressed-buttons">
+      <div class="ctrl">CTRL</div>
+      <div class="alt">ALT</div>
+      <div class="caps">CAPS</div>
+      <div class="shift">SHIFT</div>
+      <div class="enter">ENTER <img class="enter-img" src="./Images/enter-arrow.png" alt=""></div>
+      <div class="tab">TAB</div>
+      <div class="probel">PROBEL</div>
+      <div class="loss"><img class="loss-img" src="./Images/left-arrow.png" alt=""></div>
+      <div class="windows"><img class="windows-img" src="./Images/windows.png" alt=""></div>
+      <div class="up"><img class="up-img" src="./Images/arraow.png" alt=""></div>
+      <div class="down"><img class="down-img" src="./Images/arraow.png" alt=""></div>
+      <div class="left"><img class="left-img" src="./Images/arraow.png" alt=""></div>
+      <div class="right"><img class="right-img" src="./Images/arraow.png" alt=""></div>
+      <div class="plus"><img class="plus-img" src="./Images/plus.png" alt=""></div>
+      <div class="bot-line">_</div>
+      <div class="text-items">` ~</div>
+      <div class="minus"><img class="minus-img" src="./Images/minus.png" alt=""></div>
+      <div class="equal"><img class="equal-img" src="./Images/equal.png" alt=""></div>
+      <div class="esc">ESC</div>
+      <div class="del">DEl</div>
+      <div class="multiple">*</div>
+      <div class="divide">/</div>
+      <div class="question">?</div>
+      <div class="quote">'</div>
+      <div class="f1">F1</div>
+      <div class="f2">F2</div>
+      <div class="f3">F3</div>
+      <div class="f4">F4</div>
+      <div class="f5">F5</div>
+      <div class="f6">F6</div>
+      <div class="f7">F7</div>
+      <div class="f8">F8</div>
+      <div class="f9">F9</div>
+      <div class="f10">F10</div>
+      <div class="f11">F11</div>
+      <div class="f12">F12</div>
+      <div class="comma">,</div>
+      <div class="square-bracket-finish">[</div>
+      <div class="square-bracket-stop">]</div>
+      <div class="dot">.</div>
+      <div class="stop-mark">;</div>
+      <div class="stop-mark">></div>
+      <div class="straight-line">\</div>
+      <div class="a">A</div>
+      <div class="b">B</div>
+      <div class="c">C</div>
+      <div class="d">D</div>
+      <div class="e">E</div>
+      <div class="f">F</div>
+      <div class="g">G</div>
+      <div class="h">H</div>
+      <div class="i">I</div>
+      <div class="j">J</div>
+      <div class="k">K</div>
+      <div class="l">L</div>
+      <div class="m">M</div>
+      <div class="n">N</div>
+      <div class="o">O</div>
+      <div class="p">P</div>
+      <div class="q">Q</div>
+      <div class="r">R</div>
+      <div class="s">S</div>
+      <div class="t">T</div>
+      <div class="u">U</div>
+      <div class="v">V</div>
+      <div class="w">W</div>
+      <div class="x">X</div>
+      <div class="y">Y</div>
+      <div class="z">Z</div>
+      <div class="zero">0</div>
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+      <div class="six">6</div>
+      <div class="seven">7</div>
+      <div class="eight">8</div>
+      <div class="nine">9</div>
+      <div class="nl">NL</div>
+      <div class="sl">SL</div>
+      <div class="ps">PS</div>
+      <div class="big-zero">0 <span>INS</span></div>
+    </div>
+
     <script src="./app.js"></script>
+    <script src="./variable.js"></script>
   </body>
 </html>
