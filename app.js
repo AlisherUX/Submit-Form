@@ -150,6 +150,7 @@ int.addEventListener("keyup", (el) => {
 });
 
 int.addEventListener("keydown", (el) => {
+  
   if (el.keyCode == 13) {
     work();
     btn.classList.toggle("active");
@@ -205,11 +206,31 @@ int.addEventListener("keydown", (el) => {
     playStop(document.getElementById("y"));
   } else if (el.keyCode == 90) {
     playStop(document.getElementById("z"));
+  } else if (el.keyCode == 48) {
+    playStop(document.getElementById("0"));
+  } else if (el.keyCode == 49) {
+    playStop(document.getElementById("1"));
+  } else if (el.keyCode == 50) {
+    playStop(document.getElementById("2"));
+  } else if (el.keyCode == 51) {
+    playStop(document.getElementById("3"));
+  } else if (el.keyCode == 52) {
+    playStop(document.getElementById("4"));
+  } else if (el.keyCode == 53) {
+    playStop(document.getElementById("5"));
+  } else if (el.keyCode == 54) {
+    playStop(document.getElementById("6"));
+  } else if (el.keyCode == 55) {
+    playStop(document.getElementById("7"));
+  } else if (el.keyCode == 56) {
+    playStop(document.getElementById("8"));
+  } else if (el.keyCode == 57) {
+    playStop(document.getElementById("9"));
   }
 });
 
 window.addEventListener("keydown", (el) => {
-  console.log(el.keyCode);
+  // console.log(el.keyCode);
 
   if (el.keyCode == 18) {
     alt.style.display = "flex";
