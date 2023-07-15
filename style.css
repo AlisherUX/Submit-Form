@@ -26,12 +26,36 @@ body{
     gap: 50px;
 }
 
+.keyCode-wrapper{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#keycode{
+    max-width: 55%;
+    overflow-wrap: break-word;
+    background-color: #F9ED69;
+    padding: 10px;
+    border:10px solid #B83B5E;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #6A2C70;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
 .title{
     color: #F9ED69;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    width: 200px;
 }
 
 .form{
@@ -92,7 +116,8 @@ body{
     font-size: 18px;
 }
 
-.sound-btn{
+.sound-btn,
+.play-btn{
     background: transparent;
     border: none;
     background-color: #F08A5D;
@@ -111,15 +136,28 @@ body{
     height: 25px;
 }
 
+.play-btn >img{
+    width: 20px;
+    height: 20px;
+}
+
 .sound-btn-item{
-    width: 6px;
-    height: 30px;
-    background-color: #F08A5D;
+    width: 3px;
+    height: 42px;
+    background-color: #F9ED69;
+    outline: 3px solid #F08A5D;
     border-radius: 10px;
     position: absolute;
-    top: 10px;
-    left: 24px;
+    top: 2px;
+    left: 21px;
+    z-index: 1;
     transform: rotate(45deg);
+}
+
+.play-btn-item{
+    transform: rotate(-45deg);
+    left: 20px;
+    top: 1px;
 }
 
 .buttons-wrapper{

@@ -14,9 +14,12 @@
     <title>Submit</title>
   </head>
   <body>
-    <div class="container">
-      <p class="title">Type some text in input and press enter</p>
+    <div class="keyCode-wrapper">
+      <p class="title">keyboard keys' keyCodes</p>
+      <div id="keycode"></div>
+    </div>
 
+    <div class="container">
       <form onsubmit="return false" action="" class="form">
         <input type="text" class="input" />
         <div class="buttons-wrapper">
@@ -26,6 +29,10 @@
           <button class="sound-btn">
             <img src="./Images/sound.png" alt="" />
             <div class="sound-btn-item"></div>
+          </button>
+
+          <button class="play-btn">
+            <img src="./Images/play.png" alt="" />
           </button>
         </div>
       </form>

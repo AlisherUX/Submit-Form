@@ -4,6 +4,7 @@ let btn = document.querySelector(".button");
 let int = document.querySelector(".input");
 let catcher = document.querySelector("#catcher");
 let soundBtn = document.querySelector(".sound-btn");
+let playBtn = document.querySelector(".play-btn");
 let ctrl = document.querySelector(".ctrl");
 let alt = document.querySelector(".alt");
 let caps = document.querySelector(".caps");
@@ -86,15 +87,15 @@ let z = document.querySelector(".z");
 let y = document.querySelector(".y");
 let squareBracketStop = document.querySelector(".square-bracket-stop");
 let squareBracketFinish = document.querySelector(".square-bracket-finish");
-let main = 0;
+let sound = 0;
 let forLetter = 0;
 
 
-const reverse = () => {
-  if (main == 0) {
-    main = 1;
+const reverseForSound = () => {
+  if (sound == 0) {
+    sound = 1;
   } else {
-    main = 0;
+    sound = 0;
   }
 };
 
@@ -129,11 +130,13 @@ const inputHandler = function (e) {
 };
 
 soundBtn.addEventListener("click", () => {
-  reverse();
-  if (main == 1) {
+  reverseForSound();
+  if (sound == 1) {
     document.querySelector(".sound-btn-item").style.display = "none";
+    document.querySelector(".sound-btn").style.border = "none";
   } else {
     document.querySelector(".sound-btn-item").style.display = "flex";
+    document.querySelector(".sound-btn").style.border = "3px solid #F9ED69";
   }
 });
 
@@ -152,6 +155,7 @@ int.addEventListener("keyup", (el) => {
 int.addEventListener("keydown", (el) => {
   
   if (el.keyCode == 13) {
+    console.log(int.value);
     work();
     btn.classList.toggle("active");
   } else if (el.keyCode == 65) {
@@ -230,7 +234,7 @@ int.addEventListener("keydown", (el) => {
 });
 
 window.addEventListener("keydown", (el) => {
-  // console.log(el.keyCode);
+  document.getElementById("keycode").innerHTML = el.keyCode;
 
   if (el.keyCode == 18) {
     alt.style.display = "flex";
@@ -241,8 +245,8 @@ window.addEventListener("keydown", (el) => {
   } else if (el.keyCode == 17) {
     ctrl.style.display = "flex";
 
-    reverse();
-    if (main == 1) {
+    reverseForSound();
+    if (sound == 1) {
       document.querySelector(".sound-btn-item").style.display = "none";
     } else {
       document.querySelector(".sound-btn-item").style.display = "flex";
