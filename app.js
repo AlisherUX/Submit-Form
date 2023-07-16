@@ -90,7 +90,6 @@ let squareBracketFinish = document.querySelector(".square-bracket-finish");
 let sound = 0;
 let forLetter = 0;
 
-
 const reverseForSound = () => {
   if (sound == 0) {
     sound = 1;
@@ -108,7 +107,7 @@ const reverseLetter = () => {
 };
 
 const playStop = (el) => {
-  if (main == 0) {
+  if (sound == 0) {
     el.stop();
   } else {
     el.play();
@@ -153,9 +152,7 @@ int.addEventListener("keyup", (el) => {
 });
 
 int.addEventListener("keydown", (el) => {
-  
   if (el.keyCode == 13) {
-    console.log(int.value);
     work();
     btn.classList.toggle("active");
   } else if (el.keyCode == 65) {
@@ -367,7 +364,7 @@ window.addEventListener("keydown", (el) => {
     del.style.display = "flex";
 
     setTimeout(() => {
-    del.style.display = "none";
+      del.style.display = "none";
     }, 1500);
   } else if (el.keyCode == 48) {
     zero.style.display = "flex";
